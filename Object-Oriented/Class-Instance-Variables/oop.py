@@ -12,7 +12,8 @@ class Employee:
         Employee.numOfEmployees += 1
 
     def increment(self):
-        self.salary = int(self.salary * self.raiseAmount) #'self.raiseAmount' can be changed by 'Employee.raiseAmount', if you want to keep value unchangeable
+        self.salary = int(self.salary * self.raiseAmount) #'self.raiseAmount' can be changed by 'Employee.raiseAmount',
+                                                          # if you want to keep value unchangeable
 
 emp_1 = Employee('Mark', 'Bucher', 50000)
 emp_2 = Employee('Eddiee', 'Paul', 60000)
