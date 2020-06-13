@@ -5,7 +5,7 @@ class Student:
         self.sLastName = sLastName
         self.sClass = sClass
         self.sRollNo = sRollNo
- 
+#method
     def studentId(self):
         studentId = self.sFirstName + self.sLastName + self.sRollNo +'@university.com'
         return studentId.lower()
