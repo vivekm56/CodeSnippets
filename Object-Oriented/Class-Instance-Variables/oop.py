@@ -1,10 +1,10 @@
 class Employee:
     
-    numOfEmployees = 0
+    numOfEmployees = 0                                  #class-variables shared by all instances
     raiseAmount = 1.04
 
     def __init__(self, firstName, lastName, salary):
-        self.firstName = firstName
+        self.firstName = firstName                      #instance-variables unique to all instances
         self.lastName = lastName
         self.salary = salary
         self.mailId = (firstName + lastName + '@company.com').lower()
