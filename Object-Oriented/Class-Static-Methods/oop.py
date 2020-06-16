@@ -9,12 +9,11 @@ class Employee:
         self.salary = salary
         self.mailId = (firstName + lastName + '@company.com').lower()
 
-        Employee.numOfEmployees += 1
+        Employee.numOfEmployees += 1    #knit method
 
     def increment(self):
-        self.salary = int(self.salary * self.raiseAmount) #'self.raiseAmount' can be changed by 'Employee.raiseAmount', if you want to keep value unchangeable
-
-
+        self.salary = int(self.salary * self.raiseAmount) 
+        
     @classmethod                        #It can be used as an alternative constructor
     def set_raise_amt(cls, amount):     #It can be called a class instead of an Instance
         cls.raiseAmount = amount
